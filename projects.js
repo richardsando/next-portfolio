@@ -5,7 +5,7 @@ export const projects = [
       "Terminal based game based on greyhound racing. Was a great exercise to get comfortable going out on our own and creating our own app without a brief.",
     github: "https://github.com/richardsando/terminal-app",
     tech: ["Ruby"],
-    img: "/images/projects/red-dog-warrior.png"
+    img: "v1615356015/portfolio/red-dog-warrior_obwwst.png"
   },
   {
     title: "Richardsando.com",
@@ -14,7 +14,7 @@ export const projects = [
     github: "https://github.com/richardsando/portfolio",
     url: "richardsando.com",
     tech: ["Html", "Css"],
-    img: "/images/projects/richardsando.png"
+    img: "v1615356021/portfolio/richardsando_kbjcuo.png"
   },
   {
     title: "CulturePop",
@@ -23,7 +23,7 @@ export const projects = [
     github: "https://github.com/richardsando/rails-project",
     url: "https://gentle-atoll-70711.herokuapp.com/",
     tech: ["Ruby", "Amazon Web Services"],
-    img: "/images/projects/culturePop.png"
+    img: "v1615356012/portfolio/culturePop_talwx4.png"
   },
   {
     title: "Weather-X",
@@ -32,15 +32,6 @@ export const projects = [
     github: "https://github.com/richardsando/rails-project",
     url: "https://gentle-atoll-70711.herokuapp.com/",
     tech: ["Ruby", "Amazon Web Services"],
-    img: "/images/projects/.png"
-  },
-  {
-    title: "CulturePop",
-    desc:
-      "Two sided marketplace built for buying and selling pop culture merchandise, built with Ruby on Rails. First full stack application built. This was a great project, especially learning all the backend inner workings via Ruby on Rails. Learnt how to connect the frontend views to the database via controllers and models as well as payments via stripe and image storage via Amazon S3",
-    github: "https://github.com/richardsando/rails-project",
-    url: "https://gentle-atoll-70711.herokuapp.com/",
-    tech: ["Ruby", "Amazon Web Services"],
-    img: "/images/projects/weather-x.png"
+    img: "v1615356010/portfolio/weather-x_yyshik.png"
   },
 ];

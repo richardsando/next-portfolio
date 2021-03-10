@@ -50,7 +50,7 @@ const Desc = styled.p`
   padding: 0;
   margin: 0.5rem 0;
 `;
-const TechWrapper = styled.p`
+const TechWrapper = styled.div`
   margin: 0.5rem 0;
   display: flex;
 `;

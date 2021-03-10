@@ -1,16 +1,14 @@
 import Page from "../components/styled/Page";
 import styled from "styled-components";
-// import TextareaAutosize from 'react-autosize-textarea'
 import {useState} from 'react'
 
-const FormDesc = styled.p``;
+const FormDesc = styled.div``;
 
 const ContactPage = styled(Page)`
   background-color: rgba(10, 0, 36, 0.3);
 `
 
 const Contact = () => {
-  // const [formButtonDisable, setFormButton] =
   
   return (
     <ContactPage>
@@ -28,7 +26,7 @@ const Contact = () => {
             name="firstname"
             placeholder="Your name.."
           />
-           <label for="email">Email</label>
+           <label htmlFor="email">Email</label>
           <input
             type="email"
             id="email"
@@ -37,7 +35,7 @@ const Contact = () => {
           />
 
 
-          <label for="subject">Subject</label>
+          <label htmlFor="subject">Subject</label>
           <textarea
             id="subject"
             name="subject"

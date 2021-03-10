@@ -23,7 +23,7 @@ const Container = styled.div`
 `;
 
 const BackgroundImage = styled.div`
-  background-image: url("/images/background.png");
+  background-image: url("https://res.cloudinary.com/dhwugz7te/image/upload/v1615356360/portfolio/background_rpee1z.png");
   min-height: 100vh;
   opacity: 1;
   position: relative;

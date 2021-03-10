@@ -52,7 +52,7 @@ const HomePage = () => {
 				<Header> Richard Sando </Header> <SecondaryHeader> Full Stack Web Developer </SecondaryHeader>{' '}
 			</HeaderWrapper>{' '}
 			<HRule />
-			<ProfileImage src="/images/profile_pic.jpg" width={200} height={200}></ProfileImage>{' '}
+			<ProfileImage src="v1615356356/portfolio/profile_pic_j1msjf.jpg" width={200} height={200}></ProfileImage>{' '}
 			<Blurb>
 				I am interested in creating beautiful experiences for users in the form of well designed websites.With a
 				background in graphic design and visual fx, I recently completed a boot camp course to level up my
