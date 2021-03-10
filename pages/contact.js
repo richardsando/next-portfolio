@@ -1,5 +1,7 @@
 import Page from "../components/styled/Page";
 import styled from "styled-components";
+// import TextareaAutosize from 'react-autosize-textarea'
+import {useState} from 'react'
 
 const FormDesc = styled.p``;
 
@@ -8,6 +10,8 @@ const ContactPage = styled(Page)`
 `
 
 const Contact = () => {
+  // const [formButtonDisable, setFormButton] =
+  
   return (
     <ContactPage>
       <FormDesc>
@@ -17,7 +21,7 @@ const Contact = () => {
       </FormDesc>
       <div className="container">
         <form action="action_page.php">
-          <label for="fname">Name</label>
+          <label htmlFor="fname">Name</label>
           <input
             type="text"
             id="name"
