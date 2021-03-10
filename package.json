@@ -12,6 +12,7 @@
     "axios": "^0.21.1",
     "emailjs-com": "^2.6.4",
     "next": "10.0.7",
+    "nodemailer": "^6.5.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-icons": "^4.2.0",
