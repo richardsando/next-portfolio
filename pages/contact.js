@@ -40,8 +40,7 @@ const Form = styled.form`
   align-items: center;
 `;
 
-const Input = styled.input`
-`
+const Input = styled.input``;
 
 const Contact = () => {
   return (
@@ -52,23 +51,23 @@ const Contact = () => {
         <p> +61 412 452 546 or</p> <p> richardsando369@gmail.com</p>
       </FormDesc>
       <FormContainer>
-        <Form name="contact" method="POST" data-netlify="true">
-          <FormLabel>
-            <Label for="name">Name</Label>
-            <Input type="text" id="name" name="name" />
-          </FormLabel>
-          <FormLabel>
-            <Label for="email">Email</Label>
-            <Input type="text" id="email" name="email" />
-          </FormLabel>
-          <FormLabel>
-            <Label for="message">Message</Label>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" />
+          </p>
+          <p>
+            <label for="message">Message</label>
             <textarea id="message" name="message"></textarea>
-          </FormLabel>
-          <FormLabel>
+          </p>
+          <p>
             <button type="submit">Send</button>
-          </FormLabel>
-        </Form>
+          </p>
+        </form>
       </FormContainer>
     </ContactPage>
   );
