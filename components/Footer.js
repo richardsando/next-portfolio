@@ -21,20 +21,23 @@ const FooterWrapper = styled.nav`
 const Footer = () => {
   return (
     <FooterWrapper>
+
       <UnstyledLink href="https://github.com/richardsando">
         <AiFillGithub style={{ fontSize: "2.5rem" }} />
       </UnstyledLink>
 
-      <UnstyledLink>
+      <UnstyledLink href="https://www.linkedin.com/in/richard-sando-08776a84/">
         <AiFillLinkedin style={{ fontSize: "2.5rem" }} />
       </UnstyledLink>
+
       <UnstyledLink href="https://twitter.com/richardsando369">
         <AiOutlineTwitter style={{ fontSize: "2.5rem" }} />
       </UnstyledLink>
 
-      <UnstyledLink>
+      <UnstyledLink href="https://vimeo.com/richardsandofx">
         <FaVimeoV style={{ fontSize: "2.5rem" }} />
       </UnstyledLink>
+
     </FooterWrapper>
   );
 };
