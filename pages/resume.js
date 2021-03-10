@@ -13,7 +13,7 @@ const Resume = () => {
   return (
     <ResumeWrapper>
       <embed
-        src="/richardsandoresume.pdf#toolbar=0&navpanes=0&scrollbar=0"
+        src="https://res.cloudinary.com/dhwugz7te/image/upload/v1615358929/portfolio/richardsandoresume_qgtjrr.pdf"
         type="application/pdf"
         width="100%"
         height="80%"
