@@ -5,7 +5,7 @@ export const projects = [
       "Terminal based game based on greyhound racing. Was a great exercise to get comfortable going out on our own and creating our own app without a brief.",
     github: "https://github.com/richardsando/terminal-app",
     tech: ["Ruby"],
-    img: "/images/projects/weather-x.png"
+    img: "/images/projects/red-dog-warrior.png"
   },
   {
     title: "Richardsando.com",
@@ -26,9 +26,9 @@ export const projects = [
     img: "/images/projects/culturePop.png"
   },
   {
-    title: "CulturePop",
+    title: "Weather-X",
     desc:
-      "Two sided marketplace built for buying and selling pop culture merchandise, built with Ruby on Rails. First full stack application built. This was a great project, especially learning all the backend inner workings via Ruby on Rails. Learnt how to connect the frontend views to the database via controllers and models as well as payments via stripe and image storage via Amazon S3",
+      "Simple weather app made using React. This was my first big project using React. I used NodeJs for the backend.",
     github: "https://github.com/richardsando/rails-project",
     url: "https://gentle-atoll-70711.herokuapp.com/",
     tech: ["Ruby", "Amazon Web Services"],

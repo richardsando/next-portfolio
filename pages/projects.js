@@ -38,6 +38,7 @@ const Title = styled.h1`
 
 const projectsMap = projects.map((project) => {
   const { title, desc, tech, url, github, img } = project;
+  
   const techList = tech.join(", ");
   return (
     <ProjectWrapper key={title}>

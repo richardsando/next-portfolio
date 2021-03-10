@@ -7,36 +7,42 @@ import UnstyledLink from "../styled/UnstyledLink";
 import Link from "next/link";
 
 const ExternalLink = styled(UnstyledLink)`
-  color: black;
+  color: white;
   &:hover {
     color: white;
   }
 `;
 
 const ProjectWrapper = styled.div`
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.9);
-  /* border-radius: 1rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(34, 34, 34, 0.2);
   padding: 0.75rem 1.5rem;
   min-height: 480px;
   transition: transform 0.3s, color 0.3s, background-color 0.3s;
-  color: #000000;
-  &:hover {
+  color: white;
+  :hover * {
+    color: black;
+    cursor: pointer;
+  }
+  :hover {
     transform: scale(1.02);
     background-color: rgba(255, 121, 83, 0.96);
-    color: white;
+    color: black;
     cursor: pointer;
   }
 `;
 
 const Title = styled.h2`
-  color: #000000;
+transition: color 0.3s;
+  color: white;
   padding: 0;
   margin: 0;
-  transition: color 0.3;
-  &:hover {
-    color: white;
-  }
+`;
+
+const Hr = styled.hr`
+  width: 100%;
 `;
 
 const Desc = styled.p`
@@ -52,6 +58,11 @@ const Tech = styled.p`
   font-weight: 600;
 `;
 
+const TopWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const BottomWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -60,7 +71,6 @@ const BottomWrapper = styled.div`
 
 const Links = styled.div`
   width: 80px;
-
   display: flex;
   justify-content: space-between;
 `;
@@ -68,9 +78,12 @@ const Links = styled.div`
 const Project = ({ title, desc, url, github, tech, img }) => {
   return (
     <ProjectWrapper>
-      <Title>{title}</Title>
-      <Desc>{desc}</Desc>
-      <Image src={img} alt={title} width={500} height={260} />
+      <TopWrapper>
+        <Title>{title}</Title>
+        <Hr />
+        <Desc>{desc}</Desc>
+        <Image src={img} alt={title} width={500} height={260} />
+      </TopWrapper>
       <BottomWrapper>
         <TechWrapper>
           <p> Technologies used: </p> <Tech> {tech}</Tech>
