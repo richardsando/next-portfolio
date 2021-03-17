@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import Page from '../components/styled/Page';
 import Image from 'next/image';
-import { MdLocationOn } from 'react-icons/md';
-import { GrLocation } from 'react-icons/gr';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 
 const Index = styled(Page)`
@@ -42,7 +40,6 @@ const AboutWrapper = styled.div`
 	display: flex;
 	background-color: rgba(10, 0, 36, 0.3);
 	box-sizing: border-box;
-	/* border: solid 6px #ff9577; */
 	border-radius: 200px;
 	height: 200px;
 	padding: 0;
@@ -57,10 +54,8 @@ const Location = styled.span`
 	color: white;
 	font-size: calc(6px + 1vw);
 	padding: 5px;
-  /* margin-top: 10px; */
 	justify-content: flex-end;
   width: 88%;
-  /* margin: 2.5px; */
 `;
 
 const HomePage = () => {
@@ -77,7 +72,7 @@ const HomePage = () => {
 				<Blurb>
 					<p>
 						{' '}
-						Hi, I'm <span style={{ color: '#ff9577' }}>Richard Sando</span> <br />a fullstack web developer
+						Hi, I'm <span style={{ color: '#ff9577' }}>Richard Sando</span> -<br />a fullstack web developer
 						focused on design and user experience. <br />
 						<Location>
 							{' '}

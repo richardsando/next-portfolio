@@ -6,6 +6,7 @@ const Page = styled.div`
   width: 65%;
   color: #15171b;
   min-height: 0vh;
+  height: 80vh;
 `;
 
 export default Page;

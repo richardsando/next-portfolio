@@ -89,11 +89,11 @@ const Project = ({ title, desc, url, github, tech, img }) => {
           <p> Technologies used: </p> <Tech> {tech}</Tech>
         </TechWrapper>
         <Links>
-          <ExternalLink href={github}>
+          <ExternalLink href={github} target="_blank">
             <AiFillGithub style={{ fontSize: "2rem" }} />
           </ExternalLink>
 
-          <ExternalLink href={url}>
+          <ExternalLink href={url} target="_blank">
             <BsLink45Deg style={{ fontSize: "2rem" }} />
           </ExternalLink>
         </Links>

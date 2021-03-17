@@ -1,84 +1,105 @@
-import Page from "../components/styled/Page";
-import styled from "styled-components";
-import { useState } from "react";
+import Page from '../components/styled/Page';
+import styled from 'styled-components';
+import { useState } from 'react';
 
 const FormDesc = styled.div`
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.3rem;
+	margin: auto;
+	text-align: center;
+	line-height: 1.5;
 `;
-
-const ContactHeader = styled.h1``;
 
 const ContactPage = styled(Page)`
-  background-color: rgba(10, 0, 36, 0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const FormContainer = styled.div`
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	background-color: rgba(10, 0, 36, 0.3);
+	border-radius: 45px;
+	border: solid 2px #ff9577;
+	width: 600px;
+	padding: 0;
+	margin: 2rem auto;
 `;
 
 const Label = styled.label`
-  display: block;
-`;
-
-const FormLabel = styled.p`
-  font-weight: 600;
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: #ff9577;
 `;
 
 const Form = styled.form`
-  focus: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 `;
 
-const Input = styled.input``;
+const Input = styled.input`
+	width: 500px;
+	height: 40px;
+  outline: none;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  color: white;
+`;
+
+const Button = styled.button`
+	background: none;
+	color: white;
+	border: none;
+	font-size: 2rem;
+	&:hover {
+		cursor: pointer;
+		color: #ff9577;
+	}
+`;
+
+const FormWrapper = styled.p`
+margin: 0.5rem;
+`
+
+const TextArea = styled.textarea`
+	width: 500px;
+	height: 100px;
+  outline: none;
+  font-size: 1.8rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  color: white;
+
+`;
 
 const Contact = () => {
-  return (
-    <ContactPage>
-      <FormDesc>
-        <ContactHeader>Contact Details</ContactHeader>
-        <p>You can contact me via: </p>
-        <p> +61 412 452 546 or</p> <p> richardsando369@gmail.com</p>
-      </FormDesc>
-      <FormContainer>
-        <form
-          name="contact"
-          method="POST"
-          action="/success"
-          data-netlify="true"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" name="name" />
-          </p>
-          <p>
-            <label htmlFor="email">Email</label>
-            <input type="text" id="email" name="email" />
-          </p>
-          <p>
-            <label htmlFor="message">Message</label>
-            <textarea id="message" name="message"></textarea>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-      </FormContainer>
-    </ContactPage>
-  );
+	return (
+		<ContactPage>
+			<FormDesc>
+				<p>
+					You can contact me via: <br />
+					+61 412 452 546 <br /> richardsando369@gmail.com <br /> or send a message below!
+				</p>
+			</FormDesc>
+
+			<Form name="contact" method="POST" action="/success" data-netlify="true">
+				<Input type="hidden" name="form-name" value="contact" />
+				<FormWrapper>
+					<Label htmlFor="name">Name</Label> <br />
+					<Input type="text" id="name" name="name" />
+				</FormWrapper>
+				<FormWrapper>
+					<Label htmlFor="email">Email</Label> <br />
+					<Input type="text" id="email" name="email" />
+				</FormWrapper>
+				<FormWrapper>
+					<Label htmlFor="message">Message</Label> <br />
+					<TextArea id="message" name="message"></TextArea>
+				</FormWrapper>
+				<FormWrapper>
+					<Button type="submit">Send</Button>
+				</FormWrapper>
+			</Form>
+		</ContactPage>
+	);
 };
-
-
 
 export default Contact;
