@@ -21,11 +21,14 @@ const AboutPage = styled(Page)`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  max-height: 80vh;
+  overflow-y: auto;
 
 `;
 
 const TextA = styled.p`
-	font-size: 1.2rem;
+	/* font-size: 1em; */
+  font-size: calc(10px + 0.6vw);
 	background-color: rgba(34, 34, 34, 0.3);
 	border: solid 2px #ff9577;
 	border-radius: 50px;
@@ -37,6 +40,7 @@ const TextB = styled(TextA)`
 	flex-direction: column;
 	align-items: center;
 	padding-bottom: 1.2rem;
+  margin-top: 0;
 `;
 const Icons = styled.div`
 	display: flex;

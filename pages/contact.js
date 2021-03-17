@@ -8,7 +8,7 @@ const FormDesc = styled.div`
 	flex-direction: column;
 	align-items: center;
 	font-size: 1.3rem;
-	margin: auto;
+	/* margin: auto; */
 	text-align: center;
 	line-height: 1.5;
 `;
