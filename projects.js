@@ -29,9 +29,9 @@ export const projects = [
     title: "Weather-X",
     desc:
       "Simple weather app made using React. This was my first big project using React. I used NodeJs for the backend.",
-    github: "https://github.com/richardsando/rails-project",
-    url: "https://gentle-atoll-70711.herokuapp.com/",
-    tech: ["Ruby", "Amazon Web Services"],
+    github: "https://github.com/richardsando/weather-app-client",
+    url: "https://weather-x.netlify.app/",
+    tech: ["React", "NodeJS", "Google Cloud Services"],
     img: "v1615356010/portfolio/weather-x_yyshik.png"
   },
 ];

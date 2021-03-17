@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 const Page = styled.div`
   padding: 1rem 2rem;
-  margin: 1rem auto;
-  width: 768px;
+  margin: 1vh auto;
+  width: 65%;
   color: #15171b;
-  /* border-radius: 1rem; */
   min-height: 0vh;
 `;
 

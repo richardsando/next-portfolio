@@ -3,8 +3,7 @@ import styled from "styled-components";
 import UnstyledLink from "./styled/UnstyledLink";
 
 const Nav = styled.nav`
-  /* background: #15171b; */
-  padding: 2rem;
+  padding: 2vh;
   color: #ffffff;
   padding-bottom: 0;
 `;
@@ -22,7 +21,10 @@ const Navbar = () => {
   return (
     <Nav>
       <NavContainer>
-        <Link href="/">
+      <Link href="/">
+          <UnstyledLink>Home</UnstyledLink>
+        </Link>
+        <Link href="/about">
           <UnstyledLink>About</UnstyledLink>
         </Link>
         <Link href="/projects">

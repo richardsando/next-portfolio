@@ -4,7 +4,6 @@ import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
 import Image from "next/image";
 import UnstyledLink from "../styled/UnstyledLink";
-import Link from "next/link";
 
 const ExternalLink = styled(UnstyledLink)`
   color: white;
@@ -25,6 +24,7 @@ const ProjectWrapper = styled.div`
   :hover * {
     color: black;
     cursor: pointer;
+    border-color: black
   }
   :hover {
     transform: scale(1.02);
@@ -35,7 +35,7 @@ const ProjectWrapper = styled.div`
 `;
 
 const Title = styled.h2`
-transition: color 0.3s;
+/* transition: color 0.3s; */
   color: white;
   padding: 0;
   margin: 0;
@@ -93,7 +93,7 @@ const Project = ({ title, desc, url, github, tech, img }) => {
             <AiFillGithub style={{ fontSize: "2rem" }} />
           </ExternalLink>
 
-          <ExternalLink>
+          <ExternalLink href={url}>
             <BsLink45Deg style={{ fontSize: "2rem" }} />
           </ExternalLink>
         </Links>
