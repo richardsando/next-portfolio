@@ -87,7 +87,7 @@ const About = () => {
 				also am open to learning new languages and frameworks - I have just started another internship where
 				Flutter will be used as the main technology.
     <br/> <br/>
-        I am looking for any opportunities in the field of web development, if you something or know of someone, please get in touch!
+        I am looking for any opportunities in the field of web development, if you know of something someone, please get in touch!
 			</TextA>
 
 			<TextB>
