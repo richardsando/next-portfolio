@@ -4,18 +4,11 @@ import { Normalize } from 'styled-normalize';
 import Navbar from '../components/NavBar';
 import Footer from '../components/Footer';
 
-const CreateGlobalStyle = createGlobalStyle`
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
-body {
-  font-family: "Mulish", sans-serif;
-  color: #eeeeee;
-  font-weight: 300;
- 
-}
-
-`;
-
 const Container = styled.div`
+	@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+	font-family: 'Mulish', sans-serif;
+	color: #eeeeee;
+	font-weight: 300;
 	background: rgb(32, 22, 149);
 	background: linear-gradient(130deg, rgba(15, 10, 78, 1) 0%, rgba(255, 147, 98, 1) 100%);
 	position: relative;
@@ -33,17 +26,14 @@ const BackgroundImage = styled.div`
 
 const MyApp = ({ Component, pageProps }) => {
 	return (
-		<>
-			<CreateGlobalStyle />
-			<Container>
-				<BackgroundImage>
-					<Normalize />
-					<Navbar></Navbar>
-					<Component {...pageProps} />
-					<Footer></Footer>
-				</BackgroundImage>
-			</Container>
-		</>
+		<Container>
+			<Normalize />
+			<BackgroundImage>
+				<Navbar></Navbar>
+				<Component {...pageProps} />
+				<Footer></Footer>
+			</BackgroundImage>
+		</Container>
 	);
 };
 
