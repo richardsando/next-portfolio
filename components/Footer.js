@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import UnstyledLink from "../components/styled/UnstyledLink";
-import Link from "next/link";
 import { AiOutlineTwitter, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { FaVimeoV } from "react-icons/fa";
 
