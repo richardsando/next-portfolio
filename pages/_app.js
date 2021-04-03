@@ -36,14 +36,14 @@ const MyApp = ({ Component, pageProps }) => {
 	return (
 		<>
 			<CreateGlobalStyle />
-			<Container>
-				<BackgroundImage>
+			{/* <Container>
+				<BackgroundImage> */}
 					<Normalize />
-					<Navbar></Navbar>
+					{/* <Navbar></Navbar> */}
 					<Component {...pageProps} />
-					<Footer></Footer>
-				</BackgroundImage>
-			</Container>
+					{/* <Footer></Footer>
+				</BackgroundImage> */}
+			{/* </Container> */}
 		</>
 	);
 };
