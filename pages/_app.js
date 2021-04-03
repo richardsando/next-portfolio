@@ -24,7 +24,6 @@ const Container = styled.div`
 	position: relative;
 `;
 
-
 const BackgroundImage = styled.div`
 	background-image: url('https://res.cloudinary.com/dhwugz7te/image/upload/v1615356360/portfolio/background_rpee1z.png');
 	min-height: 100vh;
@@ -36,14 +35,14 @@ const MyApp = ({ Component, pageProps }) => {
 	return (
 		<>
 			<CreateGlobalStyle />
-			{/* <Container>
-				<BackgroundImage> */}
+			<Container>
+				<BackgroundImage>
 					<Normalize />
-					{/* <Navbar></Navbar> */}
+					<Navbar></Navbar>
 					<Component {...pageProps} />
-					{/* <Footer></Footer>
-				</BackgroundImage> */}
-			{/* </Container> */}
+					<Footer></Footer>
+				</BackgroundImage>
+			</Container>
 		</>
 	);
 };
