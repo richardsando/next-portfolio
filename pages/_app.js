@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Normalize } from 'styled-normalize';
 import Navbar from '../components/NavBar';
 import Footer from '../components/Footer';
+import Head from 'next/head';
 
 const Container = styled.div`
 	@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
@@ -26,14 +27,23 @@ const BackgroundImage = styled.div`
 
 const MyApp = ({ Component, pageProps }) => {
 	return (
-		<Container>
-			<Normalize />
-			<BackgroundImage>
-				<Navbar></Navbar>
-				<Component {...pageProps} />
-				<Footer></Footer>
-			</BackgroundImage>
-		</Container>
+    <>
+      <Head>
+      
+				<meta charset="UTF-8" />
+				<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<title>Richard Sando Portfolio</title>
+			</Head>
+			<Container>
+				<Normalize />
+				<BackgroundImage>
+					<Navbar></Navbar>
+					<Component {...pageProps} />
+					<Footer></Footer>
+				</BackgroundImage>
+			</Container>
+		</>
 	);
 };
 

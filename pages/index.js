@@ -55,7 +55,7 @@ const Location = styled.span`
 	font-size: calc(6px + 1vw);
 	padding: 5px;
 	justify-content: flex-end;
-  width: 88%;
+	width: 88%;
 `;
 
 const HomePage = () => {
@@ -67,6 +67,7 @@ const HomePage = () => {
 						src="v1615356356/portfolio/profile_pic_j1msjf.jpg"
 						width={200}
 						height={200}
+						alt="Richard Sando Profile Picture"
 					></ProfileImage>{' '}
 				</ProfileImageWrapper>
 				<Blurb>
