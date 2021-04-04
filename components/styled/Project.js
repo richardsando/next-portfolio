@@ -1,4 +1,3 @@
-import Page from "./Page";
 import styled from "styled-components";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
@@ -35,10 +34,10 @@ const ProjectWrapper = styled.div`
 `;
 
 const Title = styled.h2`
-/* transition: color 0.3s; */
   color: white;
   padding: 0;
   margin: 0;
+  font-weight: 200;
 `;
 
 const Hr = styled.hr`

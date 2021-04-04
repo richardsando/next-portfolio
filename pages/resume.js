@@ -2,11 +2,9 @@ import Page from "../components/styled/Page";
 import styled from "styled-components";
 
 const ResumeWrapper = styled(Page)`
-  /* min-height: 95vh; */
   height: 90vh;
   padding: 0;
   margin: 2rem auto;
-  
 `;
 
 const Resume = () => {
@@ -18,7 +16,6 @@ const Resume = () => {
         width="100%"
         height="80%"
       />
-      
     </ResumeWrapper>
   );
 };

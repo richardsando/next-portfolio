@@ -19,20 +19,21 @@ const ProfileImage = styled(Image)`
 const ProfileImageWrapper = styled.div`
 	min-width: 200px;
 	min-height: 100%;
-	width: 30vw;
+	width: 250px;
 	padding: 0;
 	margin: 0;
 `;
 
 const Blurb = styled.div`
 	color: white;
-	font-size: calc(12px + 1.5vw);
-	font-weight: 600;
+	font-size: 1.75rem;
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+  max-width: 500px;
+  font-weight: 200;
 `;
 
 const AboutWrapper = styled.div`
@@ -43,6 +44,8 @@ const AboutWrapper = styled.div`
 	border-radius: 200px;
 	height: 200px;
 	padding: 0;
+  width: 800px;
+  line-height: 1.2;
 `;
 
 const Icon = styled(HiOutlineLocationMarker)`
@@ -52,8 +55,8 @@ const Icon = styled(HiOutlineLocationMarker)`
 const Location = styled.span`
 	display: flex;
 	color: white;
-	font-size: calc(6px + 1vw);
-	padding: 5px;
+	padding-top: 5px;
+  margin-top:10px;
 	justify-content: flex-end;
 	width: 88%;
 `;

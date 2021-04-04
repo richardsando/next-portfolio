@@ -3,10 +3,9 @@ import styled from 'styled-components';
 const UnstyledLink = styled.a`
 	text-decoration: none;
 	color: inherit;
-	font-size: calc(6px + 1.5vw);
+  font-size: 1.5rem;
+  font-weight: 200;
 	transition: color 0.15s;
-	font-weight: 600;
-
 	&:hover {
 		cursor: pointer;
 		color: #ff9577;

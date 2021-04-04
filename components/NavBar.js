@@ -16,7 +16,7 @@ const NavContainer = styled.div`
 `;
 
 const Navbar = () => {
-	const handleClick = () => {};
+
 
 	return (
 		<Nav>
